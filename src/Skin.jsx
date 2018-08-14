@@ -11,10 +11,18 @@ export default class Skin extends Component {
 		return (
             <div id="player-customiser" className="blur">
                 <div className="skin-change">
-                    <div className="skin">
-                        
-                    </div>
                     <HeroNav/>
+                    <div className="skin">
+                        <div className="skin-controls">
+                            <Button to="">Upload</Button>
+                            <Button to="">Other</Button>
+                            <Button to="">Other</Button>
+                            <Button to="">Other</Button>
+                        </div>
+                        <div className="skin-preview">
+                            <img className="skin-preview-img" src="./Steve.png"/>
+                        </div>
+                    </div>
                 </div>
             </div>
 		);

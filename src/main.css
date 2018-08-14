@@ -40,8 +40,45 @@
 	text-align: right;
 }
 
+.skin-preview-img {
+	height: 75%;
+	margin: auto;
+	transition: 0.3s;
+}
+
+.skin-preview-img:hover {
+	filter: drop-shadow(0 0 10px white)
+}
+
+.skin-preview {
+	height: 100%;
+	display: flex;
+	align-content: space-around;
+	vertical-align: middle;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+}
+
+.skin-controls .button {
+	width: 10vw;
+	height: 10vw;
+	margin: 1vw;
+}
+
+.skin-controls {
+
+}
+
+.skin {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
+	height: 80%;
+}
+
 .skin-change {
-	width: 90%;
+	width: 100%;
 	height: 100%;;
 }
 
