@@ -10,7 +10,7 @@ export default class Main extends Component {
 				<div className="hero-container">
 					<div className="hero">
 						<div className="hero-img-container">
-							<img className="hero-img" src="/Aquatic-Header.jpg"/>
+							<img className="hero-img" src="./Aquatic-Header.jpg"/>
 						</div>
 						<div className="hero-content">
 							<h3 className="hero-title">UPDATE AQUATIC</h3>
