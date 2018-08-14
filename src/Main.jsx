@@ -8,6 +8,7 @@ export default class Main extends Component {
 		return (
 			<div id="main-menu" className="blur">
 				<div className="main-menu-controls">
+					<span id="logo-text">PC Edition!</span>
 					<img src={logo} className="logo"/>
 					<Link className="button" to="/Singleplayer">
 						<span>Singleplayer</span>

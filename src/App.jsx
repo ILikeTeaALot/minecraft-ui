@@ -8,6 +8,7 @@ import Options from './Options';
 import Quit from './Quit';
 
 import News from './News';
+import Skin from './Skin';
 
 class App extends Component {
 	constructor(props) {
@@ -21,7 +22,11 @@ class App extends Component {
 			<Router basename={process.env.PUBLIC_URL}>
 				<div>
 					<Route path="/" exact component={Main} />
+					<Route path="/Player-Customiser" exact component={Main} />
+					<Route path="/Resource-Packs" exact component={Main} />
+					<Route path="/Store" exact component={Main} />
 					<Route path="/" exact component={News} />
+					<Route path="/Player-Customiser" exact component={Skin} />
 					<Route path="/Singleplayer" exact component={Singleplayer} />
 					<Route path="/Options" exact component={Options} />
 					<Route path="/Quit" exact component={Quit} />

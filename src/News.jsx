@@ -3,7 +3,10 @@ import logo from './logo.png';
 
 import { Link } from 'react-router-dom';
 
-export default class Main extends Component {
+import Button from './Button';
+import HeroNav from './HeroNav';
+
+export default class News extends Component {
 	render() {
 		return (
 			<div id="news" className="">
@@ -17,9 +20,7 @@ export default class Main extends Component {
 							<span className="hero-extra">Minecraft's oceans get their biggest update yet!</span>
 						</div>
 					</div>
-					<div className="button-row">
-						// Code to generate buttons from either file or API request
-					</div>
+					<HeroNav/>
 				</div>
 			</div>
 		);
