@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot');
+  src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot?#iefix') format('embedded-opentype'),
+       url('./mcfont.woff') format('woff');
+}
+
+#version {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-size: 24px;
+}
+
+#copyright {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 24px;
+	text-align: right;
+}
+
+.hero-container {
+	/*height: 70vh;*/
+	max-width: 1170px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.hero {
+	height: 500px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.button-row {
+	height: 10vh;
+}
+
+.hero-img-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.hero-img {
+	width: 1170px;
+	transition: 0.2s;
+}
+
+.hero-content {
+	background: rgba(0, 0, 0, 0.9);
+	/*background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');*/
+	position: relative;
+	top: -112px;
+	font-family: "Noto Sans", sans-serif;
+	transition: 0.2s;
+	text-align: center;
+	padding: 0.875rem 1.2rem 1.2rem 1.2rem;
+}
+
+.hero-content h3 {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.75rem;
+	color: white;
+	font-weight: initial;
+}
+
+.hero-content span {
+	font-family: "Noto Sans", sans-serif;
+	color: white;
+	opacity: 0;
+	transition: 0.3s;
+	font-size: 1.6275rem;
+}
+
+.hero:hover .hero-img {
+	transform: scale(1.05);
+}
+
+.hero:hover .hero-content {
+	transform: translateY(-52px);
+}
+
+.hero:hover .hero-content span {
+	opacity: 1;
+}
+
+#quit, #singleplayer, #multiplayer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+/*
+#options {
+	height: 100%;
+	align-content: space-around;
+	vertical-align: middle;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+}
+*/
+#news {
+	display: flex;
+	align-content: space-around;
+	vertical-align: middle;
+	align-self: center;
+	align-items: center;
+	width: calc(100% - 608px);
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+#quit {
+	align-content: space-around;
+	vertical-align: middle;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+}
+
+#singleplayer {
+	display: flex;
+	align-content: space-around;
+	height: 100%;
+	width: 640px;
+	padding: 0 4em;
+	/*align-self: center;
+	align-items: center;*/
+}
+
+#singleplayer .button {
+	width: 100%;
+}
+
+#main-menu, #quit, #options {
+	display: flex;
+	align-content: space-around;
+	height: 100%;
+	width: 480px;
+	padding: 0 4em;
+	vertical-align: middle;
+	align-self: center;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
+.main-menu-controls, .options-container {
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.main-menu-controls > .button {
+	margin: 8px 0;
+}
+/*
+.options-container {
+	margin: 0;
+	padding: 0 4em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	vertical-align: middle;
+	width: 480px;
+}
+*/
+.options-container > .button {
+	margin: 8px 0;
+}
+
+.logo {
+	width: 100%;
+	margin: 2em 0 4em;
+}
+
+.spacer {
+	height: 4em;
+	display: block;
+	width: 100%;
+}
+
+.button {
+	height: 42px;
+	width: 480px;
+	outline: 2px solid black;
+	position: relative;
+	margin: 0;
+	display: block;
+	background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+	background-repeat: repeat;
+	padding: 0;
+	font-family: Minecraft;
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px #4C4C4C;
+	border-bottom: 4px solid #565656;
+	border-right: 2px solid #565656;
+	border-left: 2px solid #AAA;
+	border-top: 2px solid #AAA;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.button span {
+	position: relative;
+	line-height: 40px;
+	bottom: 3px;
+}
+
+.button:hover {
+	border-bottom: 4px solid #59639A;
+	border-right: 2px solid #59639A;
+	border-left: 2px solid #BDC6FF;
+	border-top: 2px solid #BDC6FF;
+	background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+	color: #FFFFA0;
+}
+
+.slide-container {
+	width: 480px;
+	margin: 8px 4px;
+	height: 42px;
+	outline: 2px solid black;
+}
+
+.slider-label {
+	position: relative;
+	color: white;
+	font-size: 18px;
+	top: -36px;
+	text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 36px; /* Specified height */
+    background: rgba(17, 17, 17, 0.5); /* Grey background */
+    outline: none; /* Remove outline */
+	text-shadow: 3px 3px #4C4C4C;
+	border-bottom: 4px solid #565656;
+	border-right: 2px solid #565656;
+	border-left: 2px solid #AAA;
+	border-top: 2px solid #AAA;
+	margin: 0;
+	padding: 0;
+}
+
+/* Mouse-over effects */
+.slider:hover + .slider-label {
+	color: #FFFFA0;
+}
+
+.slider::-moz-range-track {
+	background: transparent;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 18px; /* Set a specific slider handle width */
+    height: 42px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+	width: 18px; /* Set a specific slider handle width */
+	height: 42px; /* Slider handle height */
+	background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+	background-repeat: repeat;
+	text-shadow: 3px 3px #4C4C4C;
+	border-bottom: 4px solid #565656;
+	border-right: 2px solid #565656;
+	border-left: 2px solid #AAA;
+	border-top: 2px solid #AAA;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+
+.blur {
+	background: url("./bg-blur.png");
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: default;
+}
+
+a.external {
+	text-shadow: 3px 3px #4C4C4C;
+	cursor: pointer;
+}
+
+a.external:hover {
+	color: #FFFFA0;
+}
+
+#root, #root > div {
+	height: 100%!important;
+}
+
+h1, h2, h3 {
+	font-family: Minecraft;
+	color: white;
+	/*font-weight: normal;*/
+	text-align: center;
+}
+
+html, body, .blur {
+	user-select: none;
+	-moz-user-select: none;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+html, body {
+	margin: 0;
+	background-image: url("./bg.png");
+	font-family: Minecraft;
+	height: 100%;
+	color: white;
+}
