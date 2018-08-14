@@ -9,6 +9,7 @@ import Quit from './Quit';
 
 import News from './News';
 import Skin from './Skin';
+import ResourcePacks from './ResourcePacks';
 
 class App extends Component {
 	constructor(props) {
@@ -27,6 +28,7 @@ class App extends Component {
 					<Route path="/Store" exact component={Main} />
 					<Route path="/" exact component={News} />
 					<Route path="/Player-Customiser" exact component={Skin} />
+					<Route path="/Resource-Packs" exact component={ResourcePacks} />
 					<Route path="/Singleplayer" exact component={Singleplayer} />
 					<Route path="/Options" exact component={Options} />
 					<Route path="/Quit" exact component={Quit} />
