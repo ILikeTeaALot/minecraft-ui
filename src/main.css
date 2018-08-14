@@ -52,7 +52,7 @@
 }
 
 .hero-content {
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.7);
 	/*background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');*/
 	position: relative;
 	top: -112px;
@@ -82,7 +82,7 @@
 }
 
 .hero:hover .hero-content {
-	transform: translateY(-52px);
+	transform: translateY(-51px);
 }
 
 .hero:hover .hero-content span {
